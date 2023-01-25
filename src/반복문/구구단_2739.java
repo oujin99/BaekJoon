@@ -2,7 +2,7 @@ package 반복문;
 
 import java.util.Scanner;
 
-public class 구구단 {
+public class 구구단_2739 {
 	public static void main(String[] args) {
 		
 		/*

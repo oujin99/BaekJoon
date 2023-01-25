@@ -2,7 +2,7 @@ package 반복문;
 
 import java.util.Scanner;
 
-public class A와B더하기 {
+public class A와B더하기_10950 {
 
 	public static void main(String[] args) {
 		/*

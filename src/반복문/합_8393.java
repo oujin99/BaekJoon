@@ -2,7 +2,7 @@ package 반복문;
 
 import java.util.Scanner;
 
-public class 합 {
+public class 합_8393 {
 
 	public static void main(String[] args) {
 		/*
