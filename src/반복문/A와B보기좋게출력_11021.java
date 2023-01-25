@@ -5,6 +5,7 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.Scanner;
 import java.util.StringTokenizer;
 
 public class A와B보기좋게출력_11021 {
@@ -28,7 +29,23 @@ public class A와B보기좋게출력_11021 {
 		9 8			Case #4: 17
 		5 2			Case #5: 7
 		 */
-	
+		
+//		Scanner sc = new Scanner(System.in);
+//		int testCase = sc.nextInt();
+//		int[] result = new int[testCase];
+//		
+//		for (int i = 1; i <= testCase; i++) {
+//			int a = sc.nextInt();
+//			int b = sc.nextInt();
+//			
+//			result[i-1] += a + b;
+//		}
+//		for (int i = 0; i < result.length; i++) {
+//			
+//		System.out.println("Case #" + (i+1) + ": " + result[i]);
+//		}
+		
+		//--------------bufferedreader-------------
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
