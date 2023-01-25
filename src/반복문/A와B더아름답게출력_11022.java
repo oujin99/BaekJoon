@@ -1,10 +1,15 @@
 package 반복문;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.StringTokenizer;
 
 public class A와B더아름답게출력_11022 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		/*
 		 두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.
 
@@ -23,26 +28,20 @@ public class A와B더아름답게출력_11022 {
 		9 8			Case #4: 9 + 8 = 17
 		5 2			Case #5: 5 + 2 = 7
 		 */
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		int a, b, testCase = Integer.parseInt(br.readLine());
 		
-		Scanner sc = new Scanner(System.in);
-		int c = sc.nextInt();
-		int[] A = new int[c];
-		int[] B = new int[c];
-		int[] result = new int[c];
-		
-		for (int i = 0; i < c; i++) {
-			int a = sc.nextInt();
-			int b = sc.nextInt();
-			A[i] += a;
-			B[i] += b;
-			result[i] += a+b;
+		for (int i = 0; i < testCase; i++) {
+			StringTokenizer st = new StringTokenizer(br.readLine());
+			a = Integer.parseInt(st.nextToken());
+			b = Integer.parseInt(st.nextToken());
 			
+			bw.write("Case #" + (i+1) + ": " + a + " + " + b + " = " + (a+b) + "\n");
 		}
-		for (int i = 0; i < c; i++) {
-			System.out.println("Case #" + (i+1) + ": " + A[i] + " + " 
-					+ B[i] + " = " + result[i]);
-		}
-		sc.close();
+		bw.flush();
+		bw.close();
+		
 	}
 
 }
