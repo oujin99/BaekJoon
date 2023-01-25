@@ -32,6 +32,8 @@ public class A와B더하기 {
 		int b = 0;
 		int[] result = new int[testCase];
 		
+
+		
 		for(int i = 0; i < testCase; i++) {
 			a = sc.nextInt();
 			b = sc.nextInt();
