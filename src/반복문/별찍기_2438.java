@@ -5,6 +5,7 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.Scanner;
 
 public class 별찍기_2438 {
 
@@ -28,6 +29,18 @@ public class 별찍기_2438 {
 		*/
 		
 		
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		String star = "*";
+		
+		for (int i = 1; i <= num; i++) {
+			for (int j = 0; j < i; j++) {
+				System.out.print(star);
+			}
+			System.out.println();
+		}
+		
+		/* ---------------- BufferedReader 사용 -------------------------
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
@@ -43,7 +56,7 @@ public class 별찍기_2438 {
 		bw.flush();
 		bw.close();
 		br.close();
-		
+		*/
 
 	}
 
