@@ -5,6 +5,7 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.Scanner;
 import java.util.StringTokenizer;
 
 public class A와B더아름답게출력_11022 {
@@ -42,6 +43,27 @@ public class A와B더아름답게출력_11022 {
 		bw.flush();
 		bw.close();
 		
+		/*--------------Scanner 사용--------------
+		Scanner sc = new Scanner(System.in);
+		int c = sc.nextInt();
+		int[] A = new int[c];
+		int[] B = new int[c];
+		int[] result = new int[c];
+		
+		for (int i = 0; i < c; i++) {
+			int a = sc.nextInt();
+			int b = sc.nextInt();
+			A[i] += a;
+			B[i] += b;
+			result[i] += a+b;
+			
+		}
+		for (int i = 0; i < c; i++) {
+			System.out.println("Case #" + (i+1) + ": " + A[i] + " + " 
+					+ B[i] + " = " + result[i]);
+		}
+		sc.close();
+		*/
 	}
 
 }
